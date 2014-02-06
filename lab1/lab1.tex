@@ -2,38 +2,92 @@
 
 \usepackage[margin=1.2in]{geometry} % page margins
 \usepackage[utf8]{inputenc}         % UTF-8 charset fix
+\usepackage{mathtools}              % do math
 \usepackage{parskip}                % paragraph vertical margin
 
-\renewcommand{\thesection}{}                       % remove subsection prefix
-\renewcommand{\thesubsection}{\arabic{subsection}} % same as above
+\renewcommand \thesubsection{\arabic{section}.\Alph{subsection}}
 
 \begin{document}
 
-\section*{Formler sannstat}
+\section*{Förberedelseuppgifter}
 
-1. Definiera begreppen sannolikhet, fördelningsfunktion...
-- Sannolikhet: ett mått på hur troligt det är att en viss händelse inträffar.
-- Fördelningsfunktion: ett begrepp som betecknar ett uttryck för hur sannolika
-olika utfall i ett utfallsrum är.
-- Täthets- eller sannolikhetsfunktion: En bild av hur sannolika olika resultat
-är i förhållande till varandra till skillnad från fördelningsfunktionen som ger
-sannolikheten att variabeln antar värden som "ligger till vänster" om en given
-punkt x på talaxeln.
+\addtocounter{section}{1}
+
+\subsection{Sannolikhet}
+
+Ett mått på hur troligt det är att en viss händelse inträffar.
+
+\subsection{Täthetsfunktion}
+
+En bild av hur sannolika olika resultat är i förhållande till varandra till
+skillnad från fördelningsfunktionen som ger sannolikheten att variabeln antar
+värden som "ligger till vänster" om en given punkt x på talaxeln.
+
+\subsection{Fördelningsfunktion}
+
+Ett begrepp som betecknar ett uttryck för hur sannolika olika utfall i ett
+utfallsrum är.
+
+\subsection{Samband}
 
 Fördelningsfunktionen är integralen till täthetsfunktionen.
 
-Stora talens lag
-Låt $X_1, X_2, ...$ vara oberoende och likafördelade stokastiska variabler, var
-och en med väntevärdet $\mu$ , och sätt
-$$
-X_n = \sum\limits_{i=1}^{n}\frac{X_i}{n}.
-$$
-Då gäller, för alla $\epsilon > 0$, att
-$$
-P(\mu - \varepsilon \le X_n \le \mu + \varepsilon) \implies 1, n \implies \infty.
-$$
+\addtocounter{section}{1}
+\usecounter{subsection}
 
-\subsection{Sannolikteorins grunder}
-% \begin{itemize}
-% \end{itemize}
+\subsection{TODO}
+\subsection{TODO}
+\subsection{TODO}
+\subsection{TODO}
+
+\addtocounter{section}{1}
+\usecounter{subsection}
+
+\subsection{}
+
+$
+E[cos(U)] =
+\frac{1}{2\pi} \int \limits_0^{2\pi} cos(x) \, \mathrm{d}x =
+\left[sin(x)\right]_0^{2\pi} =
+0
+$
+
+\subsection{}
+
+$
+E[sin(U)^2] =
+\frac{1}{2\pi} \int \limits_0^{2\pi} sin(x)^2 \, \mathrm{d}x =
+\left[\frac{x-sin(x)cos(x)}{2}\right]_0^{2\pi} =
+\frac{1}{2}
+$
+
+\addtocounter{section}{1}
+\usecounter{subsection}
+
+\newpage
+
+\subsection{Stora talens lag}
+
+Låt $ X_1, X_2, ..., X_n $ vara oberoende och likafördelade stokastiska
+variabler, var och en med väntevärdet $\mu$, och sätt:
+
+$
+X_n = \sum\limits_{i=1}^{n}\frac{X_i}{n}.
+$
+
+Då gäller, för alla $\varepsilon > 0$, att:
+
+$
+P(\mu - \varepsilon \le X_n \le \mu + \varepsilon) \to 1 \, , \, n \to \infty
+$
+
+\addtocounter{section}{1}
+\usecounter{subsection}
+
+\subsection{Centrala gränsvärdessatsen}
+
+Innebär att om man adderar ett stort antal oberoende slumpmässiga variabler,
+eventuellt med olika sannolikhetsfördelningar, men med ändliga varianser, kommer
+summan att gå mot en normalfördelning.
+
 \end{document}
