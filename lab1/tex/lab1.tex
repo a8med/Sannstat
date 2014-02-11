@@ -35,10 +35,14 @@ Fördelningsfunktionen är integralen till täthetsfunktionen.
 \addtocounter{section}{1}
 \usecounter{subsection}
 
-\subsection{TODO}
-\subsection{TODO}
-\subsection{TODO}
-\subsection{TODO}
+\subsection{Närmevärde till lambda}
+Lambda = 0.4267
+\subsection{Fördelningsfunktion för X}
+F = lambda*log(x)-lambda\^2exp(-1/lambda*x)
+\subsection{Sannolikhet X mindre än 7}
+1-(0.4267*log(7)-0.4267\^2exp(-1/0.4267*7)) = 0.169680
+\subsection{E(X)}
+E(X) = 38.5542
 
 \addtocounter{section}{1}
 \usecounter{subsection}
@@ -90,4 +94,32 @@ Innebär att om man adderar ett stort antal oberoende slumpmässiga variabler,
 eventuellt med olika sannolikhetsfördelningar, men med ändliga varianser, kommer
 summan att gå mot en normalfördelning.
 
+\subsection{3}
+   1.5556e-06
+            0
+   9.9999e-01
+
+   9.9960e-01
+   1.0000e+00
+   5.7777e-08
+
+   1.5390e-06
+            0
+   4.0400e-04
+\subsection{}
+Vi ser att vår funktion kan approximeras med den exponentiala fördelningen. Vår funktion är vidare bara > 0 i intervallet 1 till 10.
+\subsection{}
+Vi ser att my ändrar väntevärdet(flyttar grafen), sigma påverkar
+standardavikelsen(ändrar utseendet) och rå ändrar relationen mellan x- och
+y-led
+\subsection{}
+Slumpen gör att vissa resultat skiljer sig ifrån den röda linjen. I och med att talen slumpas utifrån en exponential fördelning så medför det att E(slumptalen) = E(exponentialfördelningen), samma för variansen.
+
+\subsection{}
+Det ser ut som förväntat eftersom teorin är att när antalet försök går mot oändligheten kommer medelvärdet konvergera mot ett visst tal(i detta fall 0.5).
+\subsection{}
+N är antalet tal i varje stapel.
+\subsection{}
+Grafen skjuts linjärt i X-led(med ett medel i N * mu), grafens symetrista form uppstår vid N = 35.
+\subsection{}
 \end{document}
