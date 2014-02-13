@@ -115,11 +115,24 @@ y-led
 \subsection{}
 Slumpen gör att vissa resultat skiljer sig ifrån den röda linjen. I och med att talen slumpas utifrån en exponential fördelning så medför det att E(slumptalen) = E(exponentialfördelningen), samma för variansen.
 
-\subsection{}
+\subsection{Problem 4a}
 Det ser ut som förväntat eftersom teorin är att när antalet försök går mot oändligheten kommer medelvärdet konvergera mot ett visst tal(i detta fall 0.5).
-\subsection{}
+\subsection{Problem 4b}
 N är antalet tal i varje stapel.
-\subsection{}
+\subsection{Problem 4c}
 Grafen skjuts linjärt i X-led(med ett medel i N * mu), grafens symetrista form uppstår vid N = 35.
-\subsection{}
+\subsection{Problem 4d}
+Om man slumpar tal ur en given fördelning så kommer den slumpade mängden
+efterlikna den givna fördelningen. Fördelningen av slumptalen kommer följa
+sannolikheten av den givna fördelningen. Medelvärdet kommer bli typ likadant som
+väntevärdet.
+\subsection{Problem 5}
+Hämtar n\_sum stycken slumpade heltal från totalNoSamples sampleDraws blir
+dessa index från X.  sampleDraws = X(randsample(totalNoSamples, n\_sum, 1)) j
+"pelare", summerar alla tal i sampleDraws på det indexet.  yBoot(j) =
+sum(sampleDraws)
+
+Bootstrap: Utvidgar en liten mängd spridd mätdata och få en bra approximation av
+hur datat hade sett ut ifall man hade haft fler mätvärden. Om man ökar antalet
+bootstrapreplikat så blir approximationen bättre.
 \end{document}
