@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.1)  12 FEB 2014 14:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.2.1)  13 FEB 2014 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,7 +496,7 @@ e
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
 )
-Overfull \hbox (9.18135pt too wide) in paragraph at lines 22--25
+Overfull \hbox (9.18135pt too wide) in paragraph at lines 20--23
 \OT1/cmr/m/n/10 En bild av hur san-no-lika olika re-sul-tat ^^?ar i f^^?orh^^Wa
 llande till varan-dra till skill-nad fr^^Wan f^^?ordelningsfunktionen
  []
@@ -504,18 +504,41 @@ llande till varan-dra till skill-nad fr^^Wan f^^?ordelningsfunktionen
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
 [2]
-Overfull \hbox (2.23688pt too wide) in paragraph at lines 93--96
-\OT1/cmr/m/n/10 san-no-likhetsf^^?ordelningar, men med ^^?andliga var-i-anser, 
-kom-mer sum-man att g^^Wa mot en nor-malf^^?ordelning. 
+Underfull \hbox (badness 10000) in paragraph at lines 103--107
+
  []
 
 [3] [4] (./lab1.aux) ) 
 Here is how much of TeX's memory you used:
- 3301 strings out of 493315
- 46587 string characters out of 6137905
- 118718 words of memory out of 5000000
- 6717 multiletter control sequences out of 15000+600000
+ 3299 strings out of 493315
+ 46573 string characters out of 6137905
+ 119718 words of memory out of 5000000
+ 6715 multiletter control sequences out of 15000+600000
  5304 words of font info for 20 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  51i,4n,32p,300b,111s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -528,11 +551,12 @@ s/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y7.pfb>
-Output written on lab1.pdf (4 pages, 100148 bytes).
+y5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb>
+Output written on lab1.pdf (4 pages, 108552 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
