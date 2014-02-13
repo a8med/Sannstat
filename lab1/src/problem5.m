@@ -1,6 +1,6 @@
 %% Bootstrap - Simulering
 % lambda = 1/5;
-mu = 5;
+mu = 1;
 M = 1e4;
 n_sum = 5;
 X = exprnd(mu, M, n_sum);
