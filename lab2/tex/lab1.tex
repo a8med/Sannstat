@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage[margin=1.2in]{geometry} % page margins
+\usepackage[utf8]{inputenc}         % UTF-8 charset fix
+\usepackage{mathtools}              % do math
+\usepackage{parskip}                % paragraph vertical margin
+
+\renewcommand \thesubsection{\arabic{section}.\Alph{subsection}}
+
+\begin{document}
+
+\section*{Förberedelseuppgifter}
+
+\subsection*{1. Sannolikhet}
+
+Ett mått på hur troligt det är att en viss händelse inträffar.
+
+\subsection*{Täthetsfunktion}
+
+En bild av hur sannolika olika resultat är i förhållande till varandra till
+skillnad från fördelningsfunktionen som ger sannolikheten att variabeln antar
+värden som "ligger till vänster" om en given punkt x på talaxeln.
+
+\subsection*{Fördelningsfunktion}
+
+Ett begrepp som betecknar ett uttryck för hur sannolika olika utfall i ett
+utfallsrum är.
+
+\subsection*{Samband mellan fördelnings- och täthetsfunktion}
+
+Fördelningsfunktionen är integralen till täthetsfunktionen.
+
+\subsection*{2a. Närmevärde till lambda}
+Vi integrerar täthetsfunktionen från 1 till 10 och vet att = 1.
+$\lambda = 0.4267$
+\subsection*{2b. Fördelningsfunktion för X}
+$F = \lambda(\log(x)-\lambda e^{\frac{-x}{\lambda}})$
+\subsection*{2c. Sannolikhet X mindre än 7}
+$\lambda = 0.4267$ \\
+$\int \limits_1^{7} f_X(x)  \, \mathrm{d}x = 0.847796$
+\subsection*{2d. E(X)}
+$E(X) = \int \limits_1^{10} xf_X(x)  \, \mathrm{d}x = 3.86523$
+
+\subsection*{3a}
+$
+E[cos(U)] =
+\frac{1}{2\pi} \int \limits_0^{2\pi} cos(x) \, \mathrm{d}x =
+\left[sin(x)\right]_0^{2\pi} =
+0
+$
+
+\subsection*{3b}
+
+$
+E[sin(U)^2] =
+\frac{1}{2\pi} \int \limits_0^{2\pi} sin(x)^2 \, \mathrm{d}x =
+\left[\frac{x-sin(x)cos(x)}{2}\right]_0^{2\pi} =
+\frac{1}{2}
+$
+
+\subsection*{4. Stora talens lag}
+
+Låt $ X_1, X_2, ..., X_n $ vara oberoende och likafördelade stokastiska
+variabler, var och en med väntevärdet $\mu$, och sätt:
+
+$
+X_n = \sum\limits_{i=1}^{n}\frac{X_i}{n}.
+$
+
+Då gäller, för alla $\varepsilon > 0$, att:
+
+$
+P(\mu - \varepsilon \le X_n \le \mu + \varepsilon) \to 1 \, , \, n \to \infty
+$
+\subsection*{5. Centrala gränsvärdessatsen}
+
+Om man tittar på tillräckligt många oberoende s.v. med ett gemensamt väntevärde
+kommer dess fördelning efterlikna en normalfördelning ty medelvärdet av alla
+s.v. kommer gå mot väntevärdet.
+
+\section*{Problem 0}
+\subsection*{1}
+   
+  $ P(X_1 \le 10) = 1.5556e-06 $      \\       
+  $ P(X_2 \le 10) = 0 $               \\
+  $ P(X_3 \le 10) = 9.9999e-01 $\\
+  \\
+\subsection*{2}
+  $ P(X_1 > 15) = 9.9960e-01 $\\
+  $ P(X_2 > 15) = 1.0000e+00 $\\
+  $ P(X_3 > 15) = 5.7777e-08 $\\
+  \\
+\subsection*{3}
+  $ P(7 \le X_1 \le 15) = 1.5390e-06 $\\ 
+  $ P(7 \le X_1 \le 15) = 0 $ \\
+  $ P(7 \le X_1 \le 15) = 4.0400e-04 $
+   
+\section*{Problem 1}
+Vi ser att vår funktion kan approximeras med den exponentiala fördelningen. Vår
+funktion är vidare bara $>$ 0 i intervallet 1 till 10.
+\\
+\section*{Problem 2}
+Vi ser att my ändrar väntevärdet(flyttar grafen), sigma påverkar
+standardavikelsen(ändrar utseendet) och rå ändrar relationen mellan x- och
+y-led
+\\
+\section*{Problem 3}
+Slumpen gör att vissa resultat skiljer sig ifrån den röda linjen. I och med att
+talen slumpas utifrån en exponential fördelning så medför det att E(slumptalen)
+= E(exponentialfördelningen), samma för variansen.
+
+\section*{Problem 4}
+\subsection*{Problem 4a}
+Det ser ut som förväntat eftersom teorin är att när antalet försök går mot
+oändligheten kommer medelvärdet konvergera mot väntevärdet(i detta fall 0.5).
+\subsection*{Problem 4b}
+N är antalet oberoende stokastiska variabler. 
+\subsection*{Problem 4c}
+Det kommer gå mot en normalfördelning (def centrala gränsvärdessatsen)
+\subsection*{Problem 4d}
+Grafen skjuts linjärt i X-led(med ett medel i N * mu), grafens symmetriska form
+uppstår vid N = 35.
+\subsection*{Problem 4e}
+De är normalfördelade enligt centrala gränsvärdessatsen. 
+
+Om vi plockar ut n tal ur en mängd med väntevärdet my så kan summan av alla
+dessa tal approximeras av en normalfördelning med mittpunkten i n*my.  
+\subsection*{Problem 4f}
+Vi får svar 3.3e15 typ ish. Det är orimligt och ser när vi plottar fördelningen
+att vi har ett jättehopp där värdet avviker markant. Medianen ger ett bättre
+väntevärde som blir ca 4.
+\subsection*{Problem 5}
+Hämtar n\_sum stycken slumpade heltal från totalNoSamples. \\sampleDraws blir
+dessa index från X. \\ sampleDraws = X(randsample(totalNoSamples, n\_sum, 1)) \\j
+"pelare", summerar alla tal i sampleDraws på det indexet. \\ yBoot(j) =
+sum(sampleDraws), "fyller i glapp"
+\\
+Bootstrap: Utvidgar en liten mängd spridd mätdata och få en bra approximation av
+hur datat hade sett ut ifall man hade haft fler mätvärden. Om man ökar antalet
+bootstrapreplikat så blir approximationen bättre.
+\\Om man ökar my så förskjuts väntevärdet i x-led.
+\\M är antalet indata, så högre M gör att det blir färre "glapp" att fylla i. Så
+om M ökar blir resultatet bättre för initiala mätdata. Stort M gör att man inte
+behöver göra någon bootstrap.
+\end{document}

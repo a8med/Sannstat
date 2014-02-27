@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage[margin=1.2in]{geometry} % page margins
+\usepackage[utf8]{inputenc}         % UTF-8 charset fix
+\usepackage{mathtools}              % do math
+\usepackage{parskip}                % paragraph vertical margin
+
+\renewcommand \thesubsection{\arabic{section}.\Alph{subsection}}
+
+\begin{document}
+
+\section*{Förberedelseuppgifter}
+
+\subsection*{3. Reflektera över vad som är karakteristiskt för normalfördelade
+data.}
+Tyngdpunkten ligger kring väntevärdet, $\mu$, eller summan av väntevärdena
+n*$\mu$.
+Summan av en mängd likafördelade s.v:s utfall.
+
+\subsection*{4. Definiera begrepp}
+Likelihood: Givet ett utfall, vad är sannolikheten att det var en viss
+parameter?\\
+Log-likelihood: Likelihood loggad. Underlättar derivering. Bevarar maximum.\\
+Samband: Bevarar maximum.\\
+MK: Skapar en funktion som minimerar "avståndet" (approximerar flera mätdata)
+till mätdata. \\
+Maximum-likelihood: Det värde $\theta*$ där L($\theta$) antar sitt största värde
+kallas ML-skattningen av $\theta$ \\
+
+\subsection*{5. När X har täthetsfunktionen}
+ML-skattningen $b_{obs}^* = \sqrt{\frac{1}{2n}\sum\limits_{i=1}^n x_i^2}$
+
+MK:\\
+Om väntevärdet är gemensamt för alla observerade data och väntevärdesfunktionen
+är känd, vilket den är eftersom vi känner till fördelningen, så kan man skriva
+om MK-formeln enligt def 11.8 på s259. Kontentan är att det är inversen av
+väntevärdesfunktionen till vilken tar in det aritmetiska medelvärdet.
+
+Väntevärdesfunktionens invers $b^{-1}(x) = \frac{x}{\sqrt{\pi/2}}$ \\
+$b_{obs}^*(\bar{x}) = \frac{\bar{x}}{\sqrt{\pi/2}}$
+
+
+\subsection*{6. Approximativt konfidensintervall}
+Vi kan anta att b är normalfördelad, på grund av att vi antar att vi har många
+likafördelade Rayleigh-fördelade s.v:s. $1 - \alpha$ är konfidensgraden, alltså
+med vilken sannolikhet det gäller att den ligger i intervallet.
+
+$I_{{\mu }}=({\bar  {x}}-{\frac  {\lambda _{{\alpha /2}}\sigma }{{\sqrt
+{n}}}},{\bar  {x}}+{\frac  {\lambda _{{\alpha /2}}\sigma }{{\sqrt  {n}}}})$
+
+\subsection*{7. Linjär regression}
+Linjär regression är att en linjär funktion $ax+b$ anpassas till data för att
+minimera felet till dessa. Felet kan beräknas med MK t.ex.
+
+Polynomregression är som linjär regression med skillnaden att ett polynom av
+passande grad anpassas till datat.
+
+
+
+
+\end{document}
+
+
