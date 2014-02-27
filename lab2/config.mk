@@ -1,0 +1,1 @@
+LATEX = rpdflatex kth.se
