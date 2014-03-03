@@ -104,6 +104,7 @@ Beräknat konfidensintervall enligt känt tillvägagångssätt: 56.3914  232.957
 
 \begin{lstlisting}
 d = sqrt(1/(M-1)*sum((thetaboot - mean(thetaboot)).^2));
+I = [mean(x) - mean(y) - 1.96*d, mean(x) - mean(y) + 1.96*d]
 \end{lstlisting}
 
 \end{document}
