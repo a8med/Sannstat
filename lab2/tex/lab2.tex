@@ -4,8 +4,14 @@
 \usepackage[utf8]{inputenc}         % UTF-8 charset fix
 \usepackage{mathtools}              % do math
 \usepackage{parskip}                % paragraph vertical margin
+\usepackage{listings}
 
 \renewcommand \thesubsection{\arabic{section}.\Alph{subsection}}
+
+\lstset{
+  breaklines=true,
+  basicstyle=\ttfamily
+}
 
 \begin{document}
 
@@ -55,8 +61,14 @@ minimera felet till dessa. Felet kan beräknas med MK t.ex.
 Polynomregression är som linjär regression med skillnaden att ett polynom av
 passande grad anpassas till datat.
 
+\subsection*{8. Regress}
 
-\subsection*{8. Bootstrap}
+\begin{lstlisting}
+w = log(y);
+[beta, interval, residual] = regress(w, [ones(length(x), 1) x]);
+\end{lstlisting}
+
+\subsection*{9. Bootstrap}
 Bootstrap: Utvidgar en liten mängd spridd mätdata och få en bra approximation av
 hur datat hade sett ut ifall man hade haft fler mätvärden. Om man ökar antalet
 bootstrapreplikat så blir approximationen bättre.
@@ -68,7 +80,7 @@ behöver göra någon bootstrap.
 \subsection*{Problem 1. Maximum likelihood/Minsta kvadrat}
 ML = 5.6885
 MK = 4.0201
-Vi ser att MK skatningen är närmare det faktiska värdet 4 än ML skattningen.
+Vi ser att MK skattningen är närmare det faktiska värdet 4 än ML skattningen.
 
 \subsection*{Problem 2.}
 my\_est = 1.0205
@@ -76,7 +88,7 @@ upper\_bound = 1.0306
 lower\_bound = 1.0106
 
 \subsection*{Problem 3.}
-Normalfördelningen passar väl in tills x > 980 då grafen avviker ifrån
+Normalfördelningen passar väl in tills $x > 980$ då grafen avviker ifrån
 fördelningen. Pga toppen vid 1000 kommer det bli svårt att hitta en fördelning
 som passar.
 
@@ -89,5 +101,9 @@ Bootstrapreplikaten ser ut att följa normalfördelningen.
 
 Kvantilen enligt Matlab: 49.2398  233.8278
 Beräknat konfidensintervall enligt känt tillvägagångssätt: 56.3914  232.9574
+
+\begin{lstlisting}
+d = sqrt(1/(M-1)*sum((thetaboot - mean(thetaboot)).^2));
+\end{lstlisting}
 
 \end{document}
