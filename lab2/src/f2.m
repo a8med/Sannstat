@@ -6,6 +6,7 @@ n2 = normpdf(y, -1, 10);
 z = 99.9:0.00001:100.1;
 n3 = normpdf(z, 100, 0.01);
 
+% Formeln för exponentialfördelning innehåller 1/my=väntevärdet
 x2 = 0:0.01:20;
 a = exppdf(x2, 1);
 y2 = 0:0.01:20;
@@ -13,6 +14,7 @@ b = exppdf(y2, 2);
 z2 = 0:0.01:60;
 c = exppdf(z2, 10);
 
+% Väntevärdet är (x, a, b) a*b. 
 x3 = 0:0.01:20;
 i = gampdf(x3, 1, 2);
 y3 = 0:0.01:20;
